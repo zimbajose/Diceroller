@@ -98,9 +98,9 @@ namespace Diceroller.interpreter.symbols
             int range = dice_command.getRange();
             for (int i = 0; i < quantity; i++) 
             {
-                sum = sum + RollDice.rollDice(range) +modifier_value;
+                sum = sum + RollDice.rollDice(range);
             }
-            return sum;
+            return sum + modifier_value;
         }
 
         public override int getAction(int t)
