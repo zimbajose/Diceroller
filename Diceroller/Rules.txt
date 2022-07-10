@@ -1,0 +1,15 @@
+﻿R -> CR
+R -> SR
+CR -> SR1 CMP SR1
+SR ->SR1
+SR1 -> SR1 OP SR1
+SR1 -> V
+V -> N
+V -> DR
+DR -> DC M
+DC -> N CMD N
+M -> ''
+M-> OP N
+
+Tabela gerada com
+http://jsmachines.sourceforge.net/machines/slr.html
